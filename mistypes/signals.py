@@ -3,6 +3,7 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.core.mail import mail_admins
 from django.template.loader import render_to_string
+from django.utils.translation import ugettext as _
 
 from .models import Mistype
 
@@ -21,5 +22,5 @@ def email_notifier(sender, **kwargs):
         'comment': mistype.comment
     }
 
-    mail_admins('Mistype', '',
+    mail_admins(_('New mistype'), '',
                 html_message=render_to_string('mistypes/mistype-email.html', context))

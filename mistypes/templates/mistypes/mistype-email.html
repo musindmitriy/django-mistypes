@@ -1,7 +1,7 @@
 
-<p>Пользователь с IP-адресом {{ ip }} нашёл опечатку на сайте.</p>
-<p>URL-адрес опечатки: <a href="{{ url }}">{{ url }}</a></p>
-<p>Текст опечатки:</p>
+<p>{% blocktrans %}User with IP-address {{ ip }} has found a mistype on site.{% endblocktrans %}</p>
+<p>{% blocktrans %}URL:{% endblocktrans %} <a href="{{ url }}">{{ url }}</a></p>
+<p>{% blocktrans %}Mistype text:{% endblocktrans %}</p>
 <p>{{ mistype }}</p>
-<p>Комментарий пользователя:</p>
+<p>{% blocktrans %}Comment:{% endblocktrans %}</p>
 <p>{{ comment }}</p>

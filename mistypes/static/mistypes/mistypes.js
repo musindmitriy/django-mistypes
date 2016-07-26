@@ -1,12 +1,15 @@
 $(document).keypress( function(event) {
 
     if( event.which === 13 && event.ctrlKey ) {
+
+        form = $("#mistype-form");
+
         selection = window.getSelection();
         if(selection.isCollapsed) {
             return;
         }
         if(selection.toString().length > parseInt($("#id_mistype").attr("maxlength"))) {
-            alert("Выделено слишком много текста.");
+            alert(form.data("toomuchtext"));
             return;
         }
 
@@ -26,7 +29,7 @@ $(document).keypress( function(event) {
         $("#mistype-mistype").text(selection);
         $("#mistype-after").text(suf);
 
-        form = $("#mistype-form");
+
         form.find("input[name='url']").val(window.location.href);
 
         form.find("input[name='before']").val(pre);
