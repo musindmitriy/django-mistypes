@@ -7,8 +7,12 @@ from django.template.loader import render_to_string
 from .models import Mistype
 
 
-@receiver(post_save, sender=Mistype, created=True)
-def my_handler(sender, **kwargs):
+@receiver(post_save, sender=Mistype)
+def email_notifier(sender, **kwargs):
+
+    if not kwargs["created"]:
+        return  # Send email only on new mistypes
+
     mistype = kwargs["instance"]
     context = {
         'url': mistype.url,
