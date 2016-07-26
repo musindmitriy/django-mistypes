@@ -7,4 +7,4 @@ class MistypesConfig(AppConfig):
     verbose_name = "Mistypes"
 
     def ready(self):
-        pass
+        from .signals import *
