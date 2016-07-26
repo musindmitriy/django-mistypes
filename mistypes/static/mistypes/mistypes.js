@@ -51,12 +51,12 @@ $("#mistype-form").submit(function(e) {
            data: form.serialize(),
            success: function(data)
            {
-               alert("Спасибо за найденную неточность!");
+               alert(form.data("success"));
                $("#mistype-div").hide();
            },
            error: function(data)
            {
-               alert("Что-то пошло не так. Попробуйте ещё раз или сообщите администратору.");
+               alert(form.data("error"));
            }
          });
 
