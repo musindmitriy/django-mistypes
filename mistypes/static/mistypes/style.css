@@ -1,0 +1,51 @@
+#mistype-div {
+    display: none;
+    background: blue;
+    z-index: 100;
+    position: fixed;
+    width: 40%;
+    top: 30%;
+    left: 30%;
+}
+
+#mistype-div-inner {
+    padding: 3%;
+	background: #ddd;
+	width: 500px;
+	border: 1px solid #555;
+	font-size: 0.9em;
+	color: #000;
+}
+
+#mistype-div-inner img {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+#mistype-title {
+	font-weight: 700;
+	padding-bottom: 0.3em;
+}
+
+#mistype-mistype {
+    color: red;
+    text-decoration: underline;
+}
+
+.mistype-text {
+	padding: 0 0 1em;
+}
+
+#mistype-form > #id_comment {
+    width: 100%;
+}
+
+#mistype-form > #id_submit {
+    width: 7em;
+    font-weight: 700;
+    margin-right: 25px;
+}
+
+#mistype-form > #id_cancel {
+    width: 7em;
+}

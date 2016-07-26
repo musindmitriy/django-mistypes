@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<div id="mistype-div">
+    <div id="mistype-div-inner">
+        <img src="{% static 'mistypes/images/mistypes.png' %}">
+        <div id="mistype-title">Ошибка в тексте:</div>
+        <div class="mistype-text">
+            <span id="mistype-before"></span><span id="mistype-mistype"></span><span id="mistype-after"></span>
+        </div>
+        <div class="mistype-text">
+            Послать сообщение об ошибке автору?
+        </div>
+        <form id="mistype-form" action="{% url 'mistypes:mistypes_submit' %}" method="POST">
+            {% csrf_token %}
+            <label for="id_comment">
+                Комментарий для автора (необязательно, но очень приветствуется, это позволит быстрее исправить ошибку):
+            </label>
+            <input id="id_comment" maxlength="200" name="comment" type="text">
+            <input id="id_url" maxlength="300" name="url" type="hidden">
+            <input id="id_before" maxlength="50" name="before" type="hidden">
+            <input id="id_mistype" maxlength="100" name="mistype" type="hidden">
+            <input id="id_after" maxlength="50" name="after" type="hidden">
+            <div class="center">
+                <input type="submit" id="id_submit" value="Отправить">&nbsp;
+                <input type="button" id="id_cancel" value="Отмена">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="{% static 'mistypes/mistypes.js' %}"></script>
