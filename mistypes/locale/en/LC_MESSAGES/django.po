@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 20:52+0300\n"
+"POT-Creation-Date: 2016-07-26 21:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,111 +17,115 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: mistypes/apps.py:7
+#: apps.py:7 models.py:11
 msgid "Mistypes"
 msgstr ""
 
-#: mistypes/models.py:10
+#: models.py:10
+msgid "Mistype"
+msgstr ""
+
+#: models.py:14
 msgid "opened"
 msgstr ""
 
-#: mistypes/models.py:11
+#: models.py:15
 msgid "spam"
 msgstr ""
 
-#: mistypes/models.py:12
+#: models.py:16
 msgid "in progress"
 msgstr ""
 
-#: mistypes/models.py:13
+#: models.py:17
 msgid "closed"
 msgstr ""
 
-#: mistypes/models.py:14
+#: models.py:18
 msgid "not a mistake"
 msgstr ""
 
-#: mistypes/models.py:17
+#: models.py:21
 msgid "Type"
 msgstr ""
 
-#: mistypes/models.py:18
+#: models.py:22
 msgid "IP"
 msgstr ""
 
-#: mistypes/models.py:19
+#: models.py:23
 msgid "Mistype URL"
 msgstr ""
 
-#: mistypes/models.py:21
+#: models.py:25
 msgid "Before mistype"
 msgstr ""
 
-#: mistypes/models.py:22
+#: models.py:26
 msgid "Mistype text"
 msgstr ""
 
-#: mistypes/models.py:23
+#: models.py:27
 msgid "After mistype"
 msgstr ""
 
-#: mistypes/models.py:25
+#: models.py:29
 msgid "Comment"
 msgstr ""
 
-#: mistypes/models.py:27
+#: models.py:31
 msgid "Date"
 msgstr ""
 
-#: mistypes/signals.py:25
+#: signals.py:25
 msgid "New mistype"
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-email.html:2
+#: templates/mistypes/mistype-email.html:2
 #, python-format
 msgid "User with IP-address %(ip)s has found a mistype on site."
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-email.html:3
+#: templates/mistypes/mistype-email.html:3
 msgid "URL:"
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-email.html:4
+#: templates/mistypes/mistype-email.html:4
 msgid "Mistype text:"
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-email.html:6
+#: templates/mistypes/mistype-email.html:6
 msgid "Comment:"
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-form.html:6
+#: templates/mistypes/mistype-form.html:6
 msgid "Mistype in text:"
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-form.html:12
+#: templates/mistypes/mistype-form.html:12
 msgid "Send message about mistype to author?"
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-form.html:15
+#: templates/mistypes/mistype-form.html:15
 msgid "Thank you for finding mistype!"
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-form.html:16
+#: templates/mistypes/mistype-form.html:16
 msgid "Something get wrong. Please try again or contact with administrator."
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-form.html:17
+#: templates/mistypes/mistype-form.html:17
 msgid "Too much text selected."
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-form.html:20
+#: templates/mistypes/mistype-form.html:20
 msgid "Comment for author:"
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-form.html:28
+#: templates/mistypes/mistype-form.html:28
 msgid "Send"
 msgstr ""
 
-#: mistypes/templates/mistypes/mistype-form.html:29
+#: templates/mistypes/mistype-form.html:29
 msgid "Cancel"
 msgstr ""

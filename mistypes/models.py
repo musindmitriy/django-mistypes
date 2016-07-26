@@ -6,6 +6,10 @@ from django.utils.translation import ugettext_lazy as _
 
 class Mistype(models.Model):
 
+    class Meta:
+        verbose_name = _('Mistype')
+        verbose_name_plural = _('Mistypes')
+
     TYPE_CHOICES = (
         ('O', _('opened')),
         ('S', _('spam')),
