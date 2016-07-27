@@ -34,4 +34,4 @@ class Mistype(models.Model):
         return format_html('{}<span style=color:black;text-decoration:underline>{}</span>{}',
                            self.before, self.mistype, self.after)
     full_text.allow_tags = True
-
+    full_text.verbose_name = _("Full text")
