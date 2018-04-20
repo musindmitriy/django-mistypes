@@ -11,7 +11,8 @@
 #mistype-div-inner {
     padding: 3%;
 	background: #ddd;
-	width: 500px;
+    width: 100%;
+	min-width: 500px;
 	border: 1px solid #555;
 	font-size: 0.9em;
 	color: #000;
