@@ -1,7 +1,7 @@
 
 from django.test import TestCase
 
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 
 from mistypes.models import Mistype
 from mistypes.forms import MistypeForm

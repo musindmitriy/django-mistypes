@@ -9,23 +9,21 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-mistypes',
-    version='0.1',
+    version='0.2',
     packages=['mistypes'],
     include_package_data=True,
     license='BSD License',
     description='A Django app to let users report about mistypes on your site.',
     long_description=README,
-    #url='http://www.example.com/',
     author='Dmitriy Musin',
     author_email='me@pythonworld.ru',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License', # example license
+        'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        # Replace these appropriately if you are stuck on Python 2.
         'Programming Language :: Python :: 3',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
