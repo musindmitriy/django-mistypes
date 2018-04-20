@@ -10,22 +10,22 @@
 
 #mistype-div-inner {
     padding: 3%;
-	background: #ddd;
+    background: #ddd;
     width: 100%;
-	min-width: 500px;
-	border: 1px solid #555;
-	font-size: 0.9em;
-	color: #000;
+    min-width: 500px;
+    border: 1px solid #555;
+    font-size: 0.9em;
+    color: #000;
 }
 
 #mistype-div-inner img {
-	float: right;
-	margin: 0 0 1em 1em;
+    float: right;
+    margin: 0 0 1em 1em;
 }
 
 #mistype-title {
-	font-weight: 700;
-	padding-bottom: 0.3em;
+    font-weight: 700;
+    padding-bottom: 0.3em;
 }
 
 #mistype-mistype {
@@ -34,7 +34,7 @@
 }
 
 .mistype-text {
-	padding: 0 0 1em;
+    padding: 0 0 1em;
 }
 
 #mistype-form > #id_comment {
